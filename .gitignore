@@ -1,0 +1,8 @@
+node_modules/
+dist/
+*.tsbuildinfo
+
+# Leads e abordagens são privados: só o README vai para o repositório.
+leads/*
+!leads/README.md
+referencia-cliente/

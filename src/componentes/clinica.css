@@ -1,0 +1,57 @@
+.clinica {
+  padding: var(--secao) var(--margem);
+  background: var(--cor-nude);
+}
+
+.clinica__grade {
+  max-width: var(--largura);
+  margin: 0 auto;
+  display: grid;
+}
+
+
+.clinica__texto {
+  display: grid;
+  gap: 1.4rem;
+  justify-items: start;
+  max-width: 34rem;
+  margin-top: 2rem;
+  color: var(--cor-ameixa);
+}
+
+.clinica__texto .botao {
+  margin-top: 0.8rem;
+}
+
+.clinica__foto {
+  margin-top: 3rem;
+  width: min(100%, 22rem);
+  justify-self: end;
+  aspect-ratio: 4 / 5;
+  background: var(--cor-fundo);
+}
+
+@media (min-width: 900px) {
+  .clinica__grade {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: 1.5rem;
+    align-items: start;
+  }
+
+  .clinica__rotulo,
+  .clinica__titulo {
+    grid-column: 1 / 9;
+  }
+
+  .clinica__texto {
+    grid-column: 1 / 7;
+    margin-top: 2.5rem;
+  }
+
+  .clinica__foto {
+    grid-column: 9 / 13;
+    grid-row: 1 / 4;
+    margin-top: 7rem;
+    width: 100%;
+  }
+}

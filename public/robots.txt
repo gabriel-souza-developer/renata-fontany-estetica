@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gabriel-souza-developer.github.io/renata-fontany-estetica/sitemap.xml
